@@ -61,9 +61,38 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="AndGate.cpp" />
+    <ClCompile Include="CommandProcessor.cpp" />
+    <ClCompile Include="FlexibleGate.cpp" />
+    <ClCompile Include="Gate.cpp" />
+    <ClCompile Include="IDisposable.cpp" />
+    <ClCompile Include="ISingleInstence.cpp" />
+    <ClCompile Include="IUniqueID.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Net.cpp" />
+    <ClCompile Include="NetPort.cpp" />
+    <ClCompile Include="NotGate.cpp" />
+    <ClCompile Include="OrGate.cpp" />
+    <ClCompile Include="Pane.cpp" />
+    <ClCompile Include="Port.cpp" />
+    <ClCompile Include="Vivado.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AndGate.h" />
+    <ClInclude Include="CommandProcessor.h" />
+    <ClInclude Include="FlexibleGate.h" />
+    <ClInclude Include="Gate.h" />
+    <ClInclude Include="IDisposable.h" />
+    <ClInclude Include="ISingleInstence.h" />
+    <ClInclude Include="IUniqueID.h" />
+    <ClInclude Include="Net.h" />
+    <ClInclude Include="NetPort.h" />
+    <ClInclude Include="NotGate.h" />
+    <ClInclude Include="OrGate.h" />
+    <ClInclude Include="Pane.h" />
+    <ClInclude Include="Port.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Vivado.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

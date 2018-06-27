@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Gate.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Net.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="NetPort.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Port.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="AndGate.cpp">
+      <Filter>Gates</Filter>
+    </ClCompile>
+    <ClCompile Include="Vivado.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandProcessor.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ISingleInstence.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="IDisposable.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Pane.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="FlexibleGate.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="OrGate.cpp">
+      <Filter>Gates</Filter>
+    </ClCompile>
+    <ClCompile Include="IUniqueID.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="NotGate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Gate.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Net.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="NetPort.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Port.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="AndGate.h">
+      <Filter>Gates</Filter>
+    </ClInclude>
+    <ClInclude Include="Vivado.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandProcessor.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ISingleInstence.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IDisposable.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Pane.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="FlexibleGate.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="IUniqueID.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="OrGate.h">
+      <Filter>Gates</Filter>
+    </ClInclude>
+    <ClInclude Include="NotGate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="General">
+      <UniqueIdentifier>{a73ec0ca-b795-49e0-b955-d105514130df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gates">
+      <UniqueIdentifier>{65b9746c-cf41-4012-aabc-a805e9649dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{274854c6-a13f-481a-b919-8f1713cf8940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{272cff24-ee26-4354-80fd-4e15f40e3ad9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
