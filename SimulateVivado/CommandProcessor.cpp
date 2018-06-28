@@ -52,6 +52,22 @@ void CommandProcessor::PrintHints(const string &command)
 		cout << "Type command \"view\" to view the current list of ports and detailed info." << endl
 			<< "Add \"-e\" to execute the circuit and view the value of every port." << endl;
 	}
+	else if (command == "help")
+	{
+		cout << "All of available commands are listed below." << endl
+			<< "quit       - To exit the application" << endl
+			<< "gate       - To add, view or remove gates by adding -add, -v or -rm command" << endl
+			<< "connect    - To connect two ports together" << endl
+			<< "disconnect - To disconnect one port off the net it has been attached to" << endl
+			<< "watch      - To execute the circuit and observe a port's value" << endl
+			<< "             if no exception occurs, " << endl
+			<< "             otherwise to see what kind of exception appears" << endl
+			<< "view       - To see all ports' connection status. " << endl
+			<< "             When the ports are connected, they share the same \"Net\" value." << endl
+			<< "             add -e to execute the circuit and watch each port's value." << endl
+			<< "             If an exception occurs, the value will be replaced by '*' and" << endl
+			<< "             you may use \"watch\" command to see the type of exception" << endl;
+	}
 }
 
 void CommandProcessor::PrintHints()
@@ -130,6 +146,11 @@ bool CommandProcessor::ParseCommand(const string &command)
 			vivado->View();
 			return true;
 		}
+	}
+	else if (cmd == "help")
+	{
+		PrintHints(cmd);
+		return true;
 	}
 	else
 	{
