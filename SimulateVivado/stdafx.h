@@ -12,7 +12,7 @@
 	T(const T &); \
 	T &operator=(const T &)
 
-#define KNOWN_GATES 3
+#define KNOWN_GATES 7
 
 using namespace std;
 
@@ -29,10 +29,14 @@ enum GateType
 {
 	And,
 	Or,
-	Not
+	Not,
+	Nand,
+	Nor,
+	Xor,
+	Xnor
 };
 
-const string str[] = { "And Gate","Or Gate","Not Gate" };
+const string str[] = { "And Gate","Or Gate","Not Gate","Nand Gate","Nor Gate","Xor Gate","Xnor Gate" };
 
 int _getch();
 void HideCursor();

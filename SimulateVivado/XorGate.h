@@ -2,13 +2,12 @@
 #include "stdafx.h"
 #include "Gate.h"
 
-class NotGate : public Gate
+class XorGate : public Gate
 {
 public:
-	NotGate();
+	XorGate();
 
 	bool GenerateOutput(int times);
 
-	virtual ~NotGate();
+	~XorGate();
 };
-

@@ -43,7 +43,21 @@
     <ClCompile Include="IUniqueID.cpp">
       <Filter>Interface</Filter>
     </ClCompile>
-    <ClCompile Include="NotGate.cpp" />
+    <ClCompile Include="NotGate.cpp">
+      <Filter>Gates</Filter>
+    </ClCompile>
+    <ClCompile Include="NandGate.cpp">
+      <Filter>Gates</Filter>
+    </ClCompile>
+    <ClCompile Include="NorGate.cpp">
+      <Filter>Gates</Filter>
+    </ClCompile>
+    <ClCompile Include="XorGate.cpp">
+      <Filter>Gates</Filter>
+    </ClCompile>
+    <ClCompile Include="XnorGate.cpp">
+      <Filter>Gates</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Gate.h">
@@ -88,7 +102,21 @@
     <ClInclude Include="OrGate.h">
       <Filter>Gates</Filter>
     </ClInclude>
-    <ClInclude Include="NotGate.h" />
+    <ClInclude Include="NotGate.h">
+      <Filter>Gates</Filter>
+    </ClInclude>
+    <ClInclude Include="NandGate.h">
+      <Filter>Gates</Filter>
+    </ClInclude>
+    <ClInclude Include="NorGate.h">
+      <Filter>Gates</Filter>
+    </ClInclude>
+    <ClInclude Include="XorGate.h">
+      <Filter>Gates</Filter>
+    </ClInclude>
+    <ClInclude Include="XnorGate.h">
+      <Filter>Gates</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="General">

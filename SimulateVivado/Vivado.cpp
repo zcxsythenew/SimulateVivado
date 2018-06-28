@@ -90,7 +90,7 @@ void Vivado::ShowPorts(long selectedIndex, const bool &isConstantAvailable, cons
 			{
 				ShowBlack();
 			}
-			cout << i << ". " << ((*it)->GetPortType() == VCC ? "VCC #" : "GND #") << (*it)->GetID() << endl;
+			cout << (i + 1) << ". " << ((*it)->GetPortType() == VCC ? "VCC #" : "GND #") << (*it)->GetID() << endl;
 		}
 	}
 }
@@ -463,7 +463,7 @@ void Vivado::AddGate()
 	}
 	ResetCursor();
 	const Gate *const gate = pane->CreateGate((GateType)selection);
-	cout << "$" << gate->GetID() << ": " << str[gate->GetType()] << " is created" << endl;
+	cout << "$" << gate->GetID() << ": " << str[gate->GetType()] << " is created." << endl;
 }
 
 void Vivado::ViewGates()

@@ -43,6 +43,18 @@ Gate *Pane::CreateGate(const GateType &gateType)
 	case Not:
 		gate = new NotGate();
 		break;
+	case Nand:
+		gate = new NandGate();
+		break;
+	case Nor:
+		gate = new NorGate();
+		break;
+	case Xor:
+		gate = new XorGate();
+		break;
+	case Xnor:
+		gate = new XnorGate();
+		break;
 	}
 	gates.push_back(gate);
 	return gate;
