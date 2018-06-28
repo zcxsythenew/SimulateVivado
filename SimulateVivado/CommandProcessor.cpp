@@ -64,7 +64,7 @@ void CommandProcessor::PrintHints(const string &command)
 			<< "             otherwise to see what kind of exception appears" << endl
 			<< "view       - To see all ports' connection status. " << endl
 			<< "             When the ports are connected, they share the same \"Net\" value." << endl
-			<< "             add -e to execute the circuit and watch each port's value." << endl
+			<< "             Add -e to execute the circuit and watch each port's value." << endl
 			<< "             If an exception occurs, the value will be replaced by '*' and" << endl
 			<< "             you may use \"watch\" command to see the type of exception" << endl;
 	}
