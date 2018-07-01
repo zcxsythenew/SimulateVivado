@@ -227,7 +227,7 @@ Port *Vivado::SelectOnePort(const bool &isConstantAvailable, const bool &showCon
 	long selection = 0;
 	bool canContinue = true;
 	int t;
-	cout << "Choose from the following ports, or 'q' to cancel." << endl;
+	cout << "Use direction keys to select a port you want, or 'q' to cancel." << endl;
 	ShowPorts(selection, isConstantAvailable, showConstantFromPane);
 	while (canContinue)
 	{
@@ -326,7 +326,7 @@ Port *Vivado::SelectOnePortFromGate(Gate *gate)
 	bool canContinue = true;
 	int t;
 	long total = gate->GetInputPorts().size() + gate->GetOutputPorts().size() + (dynamic_cast<FlexibleGate *>(gate) != nullptr);
-	cout << "Choose from the following ports, or 'q' to cancel." << endl;
+	cout << "Use direction keys to select a port you want, or 'q' to cancel." << endl;
 	ShowPortsFromGate(selection, gate);
 	while (canContinue)
 	{
