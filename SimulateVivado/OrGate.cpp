@@ -1,4 +1,4 @@
-#include "OrGate.h"
+﻿#include "OrGate.h"
 
 OrGate::OrGate() : FlexibleGate(Or)
 {
@@ -7,6 +7,7 @@ OrGate::OrGate() : FlexibleGate(Or)
 
 bool OrGate::GenerateOutput(int times)
 {
+	bool val = false;
 	for (Port *&i : inputPorts)
 	{
 		if (i->GetConnectedNetPort() == nullptr)
@@ -15,10 +16,10 @@ bool OrGate::GenerateOutput(int times)
 		}
 		if (i->GetConnectedNetPort()->net->GetValue(times + 1))
 		{
-			return true;
+			val = true;
 		}
 	}
-	return false;
+	return val;
 }
 
 

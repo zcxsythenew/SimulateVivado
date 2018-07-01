@@ -1,4 +1,4 @@
-#include "IUniqueID.h"
+﻿#include "IUniqueID.h"
 
 IUniqueID::~IUniqueID()
 {

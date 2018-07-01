@@ -1,12 +1,12 @@
-#pragma once
+﻿#pragma once
 #include "stdafx.h"
 
 /*
- * ��ʹ�� IDisposable �ӿ�ʱ��
- * ˵������ཫ��������ָ����ڴ����⣬
- * �Ҹ����е����ݴ��Ӧ����ʹ��ָ�롣
- * ����ʹ�� IDisposable �ӿ�ʱ��
- * Ӧ�������⴦���ڴ����⡣
+ * 当使用 IDisposable 接口时，
+ * 说明这个类将处理大量指针和内存问题，
+ * 且该类中的数据存放应尽量使用指针。
+ * 当不使用 IDisposable 接口时，
+ * 应尽量避免处理内存问题。
  */
 
 interface IDisposable

@@ -1,11 +1,13 @@
-#include "NorGate.h"
+﻿#include "NorGate.h"
 
 NorGate::NorGate() : FlexibleGate(Nor)
 {
+
 }
 
 bool NorGate::GenerateOutput(int times)
 {
+	bool val = true;
 	for (Port *&i : inputPorts)
 	{
 		if (i->GetConnectedNetPort() == nullptr)
@@ -14,10 +16,10 @@ bool NorGate::GenerateOutput(int times)
 		}
 		if (i->GetConnectedNetPort()->net->GetValue(times + 1))
 		{
-			return false;
+			val = false;
 		}
 	}
-	return true;
+	return val;
 }
 
 

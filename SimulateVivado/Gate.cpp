@@ -1,4 +1,4 @@
-#include "Gate.h"
+﻿#include "Gate.h"
 
 int Gate::idGenerator = 0;
 

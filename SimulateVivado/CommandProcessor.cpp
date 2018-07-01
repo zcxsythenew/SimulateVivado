@@ -1,4 +1,4 @@
-#include "CommandProcessor.h"
+﻿#include "CommandProcessor.h"
 #include "Vivado.h"
 
 CommandProcessor *CommandProcessor::instence = NULL;
@@ -33,7 +33,7 @@ void CommandProcessor::SetVivado(Vivado *vivado)
 
 void CommandProcessor::PrintWelcome()
 {
-	cout << "SVivado, a project for finishing homework by TA" << endl;
+	cout << "SVivado, a project for finishing homework assigned by TA" << endl;
 	cout << "Copyright 2018, by Zcxsythenew" << endl;
 	PrintHints();
 }

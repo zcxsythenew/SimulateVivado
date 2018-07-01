@@ -1,4 +1,4 @@
-#include "ISingleInstence.h"
+﻿#include "ISingleInstence.h"
 
 ISingleInstence::~ISingleInstence()
 {

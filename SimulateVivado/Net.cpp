@@ -1,4 +1,4 @@
-#include "Net.h"
+﻿#include "Net.h"
 #include "Gate.h"
 
 int Net::idGenerator = 0;

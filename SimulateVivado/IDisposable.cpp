@@ -1,4 +1,4 @@
-#include "IDisposable.h"
+﻿#include "IDisposable.h"
 
 IDisposable::~IDisposable()
 {

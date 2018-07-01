@@ -1,4 +1,4 @@
-#include "XnorGate.h"
+﻿#include "XnorGate.h"
 
 XnorGate::XnorGate() : Gate(Xnor)
 {

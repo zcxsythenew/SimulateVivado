@@ -1,4 +1,4 @@
-#include "NotGate.h"
+﻿#include "NotGate.h"
 
 NotGate::NotGate() : Gate(Not)
 {

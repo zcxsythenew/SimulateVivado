@@ -1,4 +1,4 @@
-#include "NandGate.h"
+﻿#include "NandGate.h"
 
 NandGate::NandGate() : FlexibleGate(Nand)
 {
@@ -7,6 +7,7 @@ NandGate::NandGate() : FlexibleGate(Nand)
 
 bool NandGate::GenerateOutput(int times)
 {
+	bool val = false;
 	for (Port *&i : inputPorts)
 	{
 		if (i->GetConnectedNetPort() == nullptr)
@@ -15,13 +16,13 @@ bool NandGate::GenerateOutput(int times)
 		}
 		if (!i->GetConnectedNetPort()->net->GetValue(times + 1))
 		{
-			return true;
+			val = true;
 		}
 	}
-	return false;
+	return val;
 }
-
 
 NandGate::~NandGate()
 {
+
 }

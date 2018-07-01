@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "stdafx.h"
 #include "ISingleInstence.h"
 
@@ -12,7 +12,7 @@ class CommandProcessor : public ISingleInstence
 	CommandProcessor();
 	SingleInstence(CommandProcessor);
 
-	// ·µ»ØfalseÊ±ÎªÎŞĞ§ÃüÁî
+	// è¿”å›falseæ—¶ä¸ºæ— æ•ˆå‘½ä»¤
 	bool ParseCommand(const string &);
 	void PrintFail(const string &);
 public:
@@ -23,7 +23,7 @@ public:
 	void PrintHints(const string &);
 	void PrintHints();
 
-	// ·µ»ØfalseÊ±ÖÕÖ¹³ÌĞò
+	// è¿”å›falseæ—¶ç»ˆæ­¢ç¨‹åº
 	bool InputCommand();
 
 	virtual ~CommandProcessor();

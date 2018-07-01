@@ -1,4 +1,4 @@
-#include "FlexibleGate.h"
+﻿#include "FlexibleGate.h"
 
 FlexibleGate::FlexibleGate(const GateType &type) : Gate(type)
 {

@@ -1,4 +1,4 @@
-#include "XorGate.h"
+﻿#include "XorGate.h"
 
 XorGate::XorGate() : Gate(Xor)
 {

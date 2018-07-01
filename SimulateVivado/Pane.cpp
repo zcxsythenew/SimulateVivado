@@ -1,4 +1,4 @@
-#include "Pane.h"
+﻿#include "Pane.h"
 
 Pane::Pane()
 {
