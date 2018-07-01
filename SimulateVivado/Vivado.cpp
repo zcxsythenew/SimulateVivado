@@ -55,7 +55,7 @@ void Vivado::ShowPorts(long selectedIndex, const bool &isConstantAvailable, cons
 	{
 		ShowBlack();
 	}
-	cout << "1. <Choose from a gate> " << endl;
+	cout << "0. <Choose from a gate> " << endl;
 	if (isConstantAvailable)
 	{
 		if (selectedIndex == 1)
@@ -66,7 +66,7 @@ void Vivado::ShowPorts(long selectedIndex, const bool &isConstantAvailable, cons
 		{
 			ShowBlack();
 		}
-		cout << "2. VCC" << endl;
+		cout << "1. VCC" << endl;
 		if (selectedIndex == 2)
 		{
 			ShowWhite();
@@ -75,7 +75,7 @@ void Vivado::ShowPorts(long selectedIndex, const bool &isConstantAvailable, cons
 		{
 			ShowBlack();
 		}
-		cout << "3. GND" << endl;
+		cout << "2. GND" << endl;
 	}
 	if (showConstantFromPane)
 	{
@@ -90,7 +90,7 @@ void Vivado::ShowPorts(long selectedIndex, const bool &isConstantAvailable, cons
 			{
 				ShowBlack();
 			}
-			cout << (i + 1) << ". " << ((*it)->GetPortType() == VCC ? "VCC #" : "GND #") << (*it)->GetID() << endl;
+			cout << i << ". " << ((*it)->GetPortType() == VCC ? "VCC #" : "GND #") << (*it)->GetID() << endl;
 		}
 	}
 }
